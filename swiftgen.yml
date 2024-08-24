@@ -1,0 +1,19 @@
+strings:
+  inputs: TemplateSwiftUIApp/Resources/Localization/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: TemplateSwiftUIApp/Resources/Localization/GeneratedStrings.swift
+      params:
+        publicAccess: true
+        enumName: S
+#xcassets:
+#  inputs: Wattery/Resources/Colors.xcassets
+#    - Resources/Images.xcassets
+#    - Resources/MoreImages.xcassets
+#    - TradeMate/Colors.xcassets
+#  outputs:
+#    - templateName: swift5
+#      output: TradeMate/Sources/Generated/Colors.swift
+#      params:
+#        publicAccess: true
+#        enumName: Colors
