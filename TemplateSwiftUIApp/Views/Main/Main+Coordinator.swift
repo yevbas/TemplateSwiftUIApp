@@ -18,9 +18,16 @@ final class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = MainViewHostingController()
-        let navigationController = UINavigationController(rootViewController: viewController)
+        let viewController = MainViewHostingController(coordinator: self)
+        navigationController?.viewControllers = [viewController]
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+    }
+
+    func navigateToSettings() {
+        let coordinator = SettingsCoordinator(
+            navigationController: navigationController
+        )
+        coordinator.start()
     }
 }

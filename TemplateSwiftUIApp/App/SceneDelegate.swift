@@ -19,6 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(windowScene: windowScene)
         navigationController = UINavigationController()
+
         mainCoordinator = MainCoordinator(
             window: window,
             navigationController: navigationController

@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject private var viewModel: MainViewModel
+
+    init(coordinator: MainCoordinator) {
+        self._viewModel = .init(wrappedValue: .init(coordinator: coordinator))
+    }
+
     var body: some View {
         VStack {
             Text(S.testTitle)

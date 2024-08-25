@@ -14,6 +14,11 @@
 		EE06D0222C795026006B67CA /* MainViewHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06D0212C795026006B67CA /* MainViewHostingController.swift */; };
 		EE06D0242C795105006B67CA /* Main+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06D0232C795105006B67CA /* Main+Coordinator.swift */; };
 		EE06D0272C795525006B67CA /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06D0262C795525006B67CA /* HostingController.swift */; };
+		EE06D02B2C7A02AB006B67CA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06D02A2C7A02AB006B67CA /* SettingsView.swift */; };
+		EE06D02D2C7A02B3006B67CA /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06D02C2C7A02B3006B67CA /* SettingsViewModel.swift */; };
+		EE06D02F2C7A02C2006B67CA /* SettingsViewHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06D02E2C7A02C2006B67CA /* SettingsViewHostingController.swift */; };
+		EE06D0312C7A9EF2006B67CA /* Settings+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06D0302C7A9EF2006B67CA /* Settings+Coordinator.swift */; };
+		EE06D0332C7AA53D006B67CA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06D0322C7AA53D006B67CA /* MainViewModel.swift */; };
 		EE141CC22C75F5D100377DA5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE141CC12C75F5D100377DA5 /* MainView.swift */; };
 		EE141CC42C75F5D200377DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE141CC32C75F5D200377DA5 /* Assets.xcassets */; };
 		EE141CC72C75F5D200377DA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE141CC62C75F5D200377DA5 /* Preview Assets.xcassets */; };
@@ -21,6 +26,12 @@
 		EE141CF92C78F9EC00377DA5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE141CF72C78F9EC00377DA5 /* Localizable.strings */; };
 		EE141D062C78FB1E00377DA5 /* GeneratedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE141D052C78FB1E00377DA5 /* GeneratedStrings.swift */; };
 		EE141D092C78FF1E00377DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE141D082C78FF1E00377DA5 /* AppDelegate.swift */; };
+		EE953FF72C7B2DF900664DB9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE953FF62C7B2DF900664DB9 /* Configuration.swift */; };
+		EE953FF92C7B2E4E00664DB9 /* Settings+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE953FF82C7B2E4E00664DB9 /* Settings+Configuration.swift */; };
+		EE953FFB2C7B2E7600664DB9 /* Main+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE953FFA2C7B2E7600664DB9 /* Main+Configuration.swift */; };
+		EE953FFD2C7B474800664DB9 /* MailComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE953FFC2C7B474800664DB9 /* MailComposeView.swift */; };
+		EE953FFF2C7B511600664DB9 /* App+requestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE953FFE2C7B511600664DB9 /* App+requestReview.swift */; };
+		EE9540012C7B530200664DB9 /* UImage+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9540002C7B530200664DB9 /* UImage+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +44,11 @@
 		EE06D0212C795026006B67CA /* MainViewHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewHostingController.swift; sourceTree = "<group>"; };
 		EE06D0232C795105006B67CA /* Main+Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main+Coordinator.swift"; sourceTree = "<group>"; };
 		EE06D0262C795525006B67CA /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		EE06D02A2C7A02AB006B67CA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EE06D02C2C7A02B3006B67CA /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		EE06D02E2C7A02C2006B67CA /* SettingsViewHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewHostingController.swift; sourceTree = "<group>"; };
+		EE06D0302C7A9EF2006B67CA /* Settings+Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Coordinator.swift"; sourceTree = "<group>"; };
+		EE06D0322C7AA53D006B67CA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		EE141CBC2C75F5D100377DA5 /* TemplateSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE141CC12C75F5D100377DA5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EE141CC32C75F5D200377DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +63,12 @@
 		EE141D012C78FA1B00377DA5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EE141D052C78FB1E00377DA5 /* GeneratedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedStrings.swift; sourceTree = "<group>"; };
 		EE141D082C78FF1E00377DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE953FF62C7B2DF900664DB9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		EE953FF82C7B2E4E00664DB9 /* Settings+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Configuration.swift"; sourceTree = "<group>"; };
+		EE953FFA2C7B2E7600664DB9 /* Main+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main+Configuration.swift"; sourceTree = "<group>"; };
+		EE953FFC2C7B474800664DB9 /* MailComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposeView.swift; sourceTree = "<group>"; };
+		EE953FFE2C7B511600664DB9 /* App+requestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+requestReview.swift"; sourceTree = "<group>"; };
+		EE9540002C7B530200664DB9 /* UImage+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImage+extensions.swift"; sourceTree = "<group>"; };
 		F66C4619AF0DC60CECEDB355 /* Pods-TemplateSwiftUIApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateSwiftUIApp.debug.xcconfig"; path = "Target Support Files/Pods-TemplateSwiftUIApp/Pods-TemplateSwiftUIApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,8 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				EE141CC12C75F5D100377DA5 /* MainView.swift */,
+				EE06D0322C7AA53D006B67CA /* MainViewModel.swift */,
 				EE06D0212C795026006B67CA /* MainViewHostingController.swift */,
 				EE06D0232C795105006B67CA /* Main+Coordinator.swift */,
+				EE953FFA2C7B2E7600664DB9 /* Main+Configuration.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -84,8 +108,30 @@
 			isa = PBXGroup;
 			children = (
 				EE06D0262C795525006B67CA /* HostingController.swift */,
+				EE953FFC2C7B474800664DB9 /* MailComposeView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		EE06D0282C79EA33006B67CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE953FFE2C7B511600664DB9 /* App+requestReview.swift */,
+				EE9540002C7B530200664DB9 /* UImage+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE06D0292C7A0254006B67CA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EE06D02A2C7A02AB006B67CA /* SettingsView.swift */,
+				EE06D02C2C7A02B3006B67CA /* SettingsViewModel.swift */,
+				EE06D02E2C7A02C2006B67CA /* SettingsViewHostingController.swift */,
+				EE06D0302C7A9EF2006B67CA /* Settings+Coordinator.swift */,
+				EE953FF82C7B2E4E00664DB9 /* Settings+Configuration.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		EE141CB32C75F5D100377DA5 = {
@@ -109,9 +155,10 @@
 		EE141CBE2C75F5D100377DA5 /* TemplateSwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
-				EE141D072C78FF1600377DA5 /* App */,
 				EE141D0A2C78FF5B00377DA5 /* Views */,
 				EE06D0252C79551C006B67CA /* CustomViews */,
+				EE06D0282C79EA33006B67CA /* Extensions */,
+				EE141D072C78FF1600377DA5 /* App */,
 				EE141CF52C78F93A00377DA5 /* Resources */,
 				EE141CC52C75F5D200377DA5 /* Preview Content */,
 			);
@@ -167,6 +214,8 @@
 		EE141D0A2C78FF5B00377DA5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE953FF62C7B2DF900664DB9 /* Configuration.swift */,
+				EE06D0292C7A0254006B67CA /* Settings */,
 				EE06CFF42C794D1A006B67CA /* Main */,
 			);
 			path = Views;
@@ -325,12 +374,23 @@
 			files = (
 				EE06D0222C795026006B67CA /* MainViewHostingController.swift in Sources */,
 				EE141CF62C78F95400377DA5 /* Assets.xcassets in Sources */,
+				EE06D0312C7A9EF2006B67CA /* Settings+Coordinator.swift in Sources */,
 				EE141CC22C75F5D100377DA5 /* MainView.swift in Sources */,
 				EE141D092C78FF1E00377DA5 /* AppDelegate.swift in Sources */,
 				EE141D062C78FB1E00377DA5 /* GeneratedStrings.swift in Sources */,
+				EE953FF72C7B2DF900664DB9 /* Configuration.swift in Sources */,
+				EE06D02B2C7A02AB006B67CA /* SettingsView.swift in Sources */,
+				EE06D0332C7AA53D006B67CA /* MainViewModel.swift in Sources */,
+				EE06D02F2C7A02C2006B67CA /* SettingsViewHostingController.swift in Sources */,
 				EE06CFF82C794D5C006B67CA /* Coordinator.swift in Sources */,
+				EE953FF92C7B2E4E00664DB9 /* Settings+Configuration.swift in Sources */,
+				EE953FFD2C7B474800664DB9 /* MailComposeView.swift in Sources */,
+				EE9540012C7B530200664DB9 /* UImage+extensions.swift in Sources */,
+				EE953FFF2C7B511600664DB9 /* App+requestReview.swift in Sources */,
 				EE06D0272C795525006B67CA /* HostingController.swift in Sources */,
+				EE06D02D2C7A02B3006B67CA /* SettingsViewModel.swift in Sources */,
 				EE06D01C2C794EFD006B67CA /* SceneDelegate.swift in Sources */,
+				EE953FFB2C7B2E7600664DB9 /* Main+Configuration.swift in Sources */,
 				EE06D0242C795105006B67CA /* Main+Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
