@@ -7,6 +7,12 @@
 
 import Foundation
 
-extension Configuration {
-    struct Main {}
+struct Main {
+    var strings = Strings()
+}
+
+extension Main {
+    struct Strings {
+        var title = S.Main.title
+    }
 }

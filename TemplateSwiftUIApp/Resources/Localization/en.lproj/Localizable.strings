@@ -6,4 +6,13 @@
   
 */
 
-"test_title" = "Test title";
+/* Main*/
+"main.title" = "Main";
+
+/* Settings */
+"settings.title" = "Settings";
+"settings.rate_us_title" = "Rate us";
+"settings.change_language_title" = "Change language";
+"settings.write_mail_title" = "Write mail";
+"settings.privacy_policy_title" = "Privacy policy";
+"settings.terms_of_use_title" = "Terms and conditions";

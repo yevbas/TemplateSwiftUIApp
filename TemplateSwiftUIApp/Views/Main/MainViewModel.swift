@@ -13,4 +13,8 @@ final class MainViewModel: ObservableObject {
     init(coordinator: MainCoordinator?) {
         self.coordinator = coordinator
     }
+
+    func presentPaywall() {
+        coordinator?.presentPaywall()
+    }
 }

@@ -25,4 +25,3 @@ class HostingController<HostingView: View>: UIHostingController<HostingView> {
 
     func setupNavigationBar() {}
 }
-

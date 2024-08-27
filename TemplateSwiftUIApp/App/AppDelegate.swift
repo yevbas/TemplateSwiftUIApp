@@ -7,6 +7,7 @@
 
 import UIKit
 import Resolver
+import RevenueCat
 
 @main
 class AppDelegate: NSObject, UIApplicationDelegate {
@@ -14,9 +15,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
 
-        Resolver.register { Configuration.Main() }
-        Resolver.register { Configuration.Settings() }
+        setupMain()
+        setupSettings()
+        setupPaywall()
 
         return true
     }
+
 }

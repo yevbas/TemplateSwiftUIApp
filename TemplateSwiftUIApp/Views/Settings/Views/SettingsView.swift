@@ -9,7 +9,7 @@ import SwiftUI
 import Resolver
 
 struct SettingsView: View {
-    @Injected private var configuration: Configuration.Settings
+    @Injected private var configuration: Settings
     @StateObject private var viewModel: SettingsViewModel
 
     init(coordinator: SettingsCoordinator) {

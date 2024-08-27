@@ -8,25 +8,24 @@
 import Foundation
 import UIKit
 
-extension Configuration {
-    struct Settings {
-        var strings = Strings()
-        var images = Images()
-        var constants = Constants()
-    }
+struct Settings {
+    var strings = Strings()
+    var images = Images()
+    var constants = Constants()
 }
 
-extension Configuration.Settings {
+extension Settings {
     struct Strings {
-        var rateUsTitle = "Rate us"
-        var changeLanguageTitle = "Change language"
-        var writeMailTitle = "Write mail"
-        var privacyPolicyTitle = "Privacy policy"
-        var termsOfUseTitle = "Terms and Conditions"
+        var title = S.Settings.title
+        var rateUsTitle = S.Settings.rateUsTitle
+        var changeLanguageTitle = S.Settings.changeLanguageTitle
+        var writeMailTitle = S.Settings.writeMailTitle
+        var privacyPolicyTitle = S.Settings.privacyPolicyTitle
+        var termsOfUseTitle = S.Settings.termsOfUseTitle
     }
 }
 
-extension Configuration.Settings {
+extension Settings {
     struct Constants {
         var privacyPolicyURL = "google.com"
         var termsOfUseURL = "google.com"
@@ -34,7 +33,7 @@ extension Configuration.Settings {
     }
 }
 
-extension Configuration.Settings {
+extension Settings {
     struct Images {
         var rateUsIcon = UIImage(systemName: "star")!
         var mailIcon = UIImage(systemName: "envelope")!

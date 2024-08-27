@@ -6,13 +6,16 @@
 //
 
 import Foundation
+import Resolver
 
 final class SettingsViewHostingController: HostingController<SettingsView> {
+    @LazyInjected private var configuration: Settings
+
     init(coordinator: SettingsCoordinator) {
         super.init(rootView: SettingsView(coordinator: coordinator))
     }
 
     override func setupNavigationBar() {
-        navigationItem.title = "Settings screen title"
+        navigationItem.title = configuration.strings.title
     }
 }

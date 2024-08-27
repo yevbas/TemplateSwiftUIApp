@@ -1,5 +1,5 @@
 //
-//  UImage+extensions.swift
+//  UImage+swiftUI.swift
 //  TemplateSwiftUIApp
 //
 //  Created by Jackson  on 25/08/2024.

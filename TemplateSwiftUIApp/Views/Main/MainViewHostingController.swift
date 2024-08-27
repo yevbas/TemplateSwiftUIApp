@@ -7,8 +7,10 @@
 
 import UIKit
 import SwiftUI
+import Resolver
 
 final class MainViewHostingController: HostingController<MainView> {
+    @LazyInjected private var configuration: Main
     private weak var coordinator: MainCoordinator?
 
     init(coordinator: MainCoordinator) {
@@ -17,7 +19,7 @@ final class MainViewHostingController: HostingController<MainView> {
     }
 
     override func setupNavigationBar() {
-        navigationItem.title = "Main screen title"
+        navigationItem.title = configuration.strings.title
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItems = [
             .init(

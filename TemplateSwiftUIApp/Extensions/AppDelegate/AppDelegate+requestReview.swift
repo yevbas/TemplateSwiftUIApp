@@ -1,5 +1,5 @@
 //
-//  App+requestReview.swift
+//  AppDelegate+requestReview.swift
 //  TemplateSwiftUIApp
 //
 //  Created by Jackson  on 25/08/2024.

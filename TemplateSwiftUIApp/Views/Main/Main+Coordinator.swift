@@ -30,4 +30,11 @@ final class MainCoordinator: Coordinator {
         )
         coordinator.start()
     }
+
+    func presentPaywall() {
+        let coordinator = PaywallCoordinator(
+            navigationController: navigationController
+        )
+        coordinator.start()
+    }
 }

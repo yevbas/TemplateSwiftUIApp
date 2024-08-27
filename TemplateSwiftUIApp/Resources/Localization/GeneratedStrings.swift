@@ -10,11 +10,24 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum S {
-  /// Localizable.strings
-  ///   TemplateSwiftUIApp
-  /// 
-  ///   Created by Jackson  on 23/08/2024.
-  public static let testTitle = S.tr("Localizable", "test_title", fallback: "Test title")
+  public enum Main {
+    /// Main
+    public static let title = S.tr("Localizable", "main.title", fallback: "Main")
+  }
+  public enum Settings {
+    /// Change language
+    public static let changeLanguageTitle = S.tr("Localizable", "settings.change_language_title", fallback: "Change language")
+    /// Privacy policy
+    public static let privacyPolicyTitle = S.tr("Localizable", "settings.privacy_policy_title", fallback: "Privacy policy")
+    /// Rate us
+    public static let rateUsTitle = S.tr("Localizable", "settings.rate_us_title", fallback: "Rate us")
+    /// Terms and conditions
+    public static let termsOfUseTitle = S.tr("Localizable", "settings.terms_of_use_title", fallback: "Terms and conditions")
+    /// Settings
+    public static let title = S.tr("Localizable", "settings.title", fallback: "Settings")
+    /// Write mail
+    public static let writeMailTitle = S.tr("Localizable", "settings.write_mail_title", fallback: "Write mail")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

@@ -16,7 +16,9 @@ struct MainView: View {
 
     var body: some View {
         VStack {
-            Text(S.testTitle)
+            Button(action: { viewModel.presentPaywall() }, label: {
+                Text("Subscribe")
+            })
         }
         .padding()
     }
