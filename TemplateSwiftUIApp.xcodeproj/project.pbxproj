@@ -41,6 +41,13 @@
 		EE95401A2C7CC08F00664DB9 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9540192C7CC08F00664DB9 /* DesignSystem.swift */; };
 		EE95401C2C7CC11A00664DB9 /* PaywallHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE95401B2C7CC11A00664DB9 /* PaywallHostingController.swift */; };
 		EE95401E2C7CC2A400664DB9 /* Paywall+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE95401D2C7CC2A400664DB9 /* Paywall+Coordinator.swift */; };
+		EEB8EBDD2C99BE9B00E4A596 /* ChatGPTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EBDC2C99BE9B00E4A596 /* ChatGPTClient.swift */; };
+		EEB8EBE02C99BF4600E4A596 /* ChatGPTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EBDF2C99BF4600E4A596 /* ChatGPTError.swift */; };
+		EEB8EBE32C99BF7400E4A596 /* ChatGPTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EBE22C99BF7400E4A596 /* ChatGPTModel.swift */; };
+		EEB8EBE52C99BF8700E4A596 /* ChatGPTRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EBE42C99BF8700E4A596 /* ChatGPTRole.swift */; };
+		EEB8EBE72C99BF9400E4A596 /* ChatGPTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EBE62C99BF9400E4A596 /* ChatGPTMessage.swift */; };
+		EEB8EBE92C99BFA600E4A596 /* ChatGPTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EBE82C99BFA600E4A596 /* ChatGPTRequest.swift */; };
+		EEB8EBEB2C99BFB700E4A596 /* ChatGPTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EBEA2C99BFB700E4A596 /* ChatGPTResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +93,13 @@
 		EE9540192C7CC08F00664DB9 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		EE95401B2C7CC11A00664DB9 /* PaywallHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallHostingController.swift; sourceTree = "<group>"; };
 		EE95401D2C7CC2A400664DB9 /* Paywall+Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Paywall+Coordinator.swift"; sourceTree = "<group>"; };
+		EEB8EBDC2C99BE9B00E4A596 /* ChatGPTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTClient.swift; sourceTree = "<group>"; };
+		EEB8EBDF2C99BF4600E4A596 /* ChatGPTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTError.swift; sourceTree = "<group>"; };
+		EEB8EBE22C99BF7400E4A596 /* ChatGPTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTModel.swift; sourceTree = "<group>"; };
+		EEB8EBE42C99BF8700E4A596 /* ChatGPTRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTRole.swift; sourceTree = "<group>"; };
+		EEB8EBE62C99BF9400E4A596 /* ChatGPTMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTMessage.swift; sourceTree = "<group>"; };
+		EEB8EBE82C99BFA600E4A596 /* ChatGPTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTRequest.swift; sourceTree = "<group>"; };
+		EEB8EBEA2C99BFB700E4A596 /* ChatGPTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTResponse.swift; sourceTree = "<group>"; };
 		F66C4619AF0DC60CECEDB355 /* Pods-TemplateSwiftUIApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateSwiftUIApp.debug.xcconfig"; path = "Target Support Files/Pods-TemplateSwiftUIApp/Pods-TemplateSwiftUIApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +187,8 @@
 		EE141CBE2C75F5D100377DA5 /* TemplateSwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
+				EEB8EBDB2C99BE7000E4A596 /* UseCases */,
+				EEB8EBDA2C99BE6600E4A596 /* Clients */,
 				EE141D0A2C78FF5B00377DA5 /* Views */,
 				EE06D0252C79551C006B67CA /* CustomViews */,
 				EE06D0282C79EA33006B67CA /* Extensions */,
@@ -302,6 +318,43 @@
 				EE9540162C7CBFF600664DB9 /* PaywallView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EEB8EBDA2C99BE6600E4A596 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8EBDE2C99BF3300E4A596 /* ChatGPT */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		EEB8EBDB2C99BE7000E4A596 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		EEB8EBDE2C99BF3300E4A596 /* ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8EBDC2C99BE9B00E4A596 /* ChatGPTClient.swift */,
+				EEB8EBDF2C99BF4600E4A596 /* ChatGPTError.swift */,
+				EEB8EBE12C99BF6900E4A596 /* Models */,
+			);
+			path = ChatGPT;
+			sourceTree = "<group>";
+		};
+		EEB8EBE12C99BF6900E4A596 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8EBE22C99BF7400E4A596 /* ChatGPTModel.swift */,
+				EEB8EBE42C99BF8700E4A596 /* ChatGPTRole.swift */,
+				EEB8EBE62C99BF9400E4A596 /* ChatGPTMessage.swift */,
+				EEB8EBE82C99BFA600E4A596 /* ChatGPTRequest.swift */,
+				EEB8EBEA2C99BFB700E4A596 /* ChatGPTResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB8EBDD2C99BE9B00E4A596 /* ChatGPTClient.swift in Sources */,
 				EE06D0222C795026006B67CA /* MainViewHostingController.swift in Sources */,
 				EE141CF62C78F95400377DA5 /* Assets.xcassets in Sources */,
 				EE06D0312C7A9EF2006B67CA /* Settings+Coordinator.swift in Sources */,
@@ -460,6 +514,7 @@
 				EE141D062C78FB1E00377DA5 /* GeneratedStrings.swift in Sources */,
 				EE9540112C7CBEAC00664DB9 /* AppDelegate+setup.swift in Sources */,
 				EE95400B2C7CB9EA00664DB9 /* UserInfoAsyncMonitor.swift in Sources */,
+				EEB8EBE52C99BF8700E4A596 /* ChatGPTRole.swift in Sources */,
 				EE06D02B2C7A02AB006B67CA /* SettingsView.swift in Sources */,
 				EE9540042C7CB7DF00664DB9 /* PaywallViewModel.swift in Sources */,
 				EE06D0332C7AA53D006B67CA /* MainViewModel.swift in Sources */,
@@ -471,14 +526,19 @@
 				EE953FFD2C7B474800664DB9 /* MailComposeView.swift in Sources */,
 				EE9540012C7B530200664DB9 /* UImage+swiftUI.swift in Sources */,
 				EE95401A2C7CC08F00664DB9 /* DesignSystem.swift in Sources */,
+				EEB8EBE92C99BFA600E4A596 /* ChatGPTRequest.swift in Sources */,
+				EEB8EBE02C99BF4600E4A596 /* ChatGPTError.swift in Sources */,
 				EE95401C2C7CC11A00664DB9 /* PaywallHostingController.swift in Sources */,
 				EE953FFF2C7B511600664DB9 /* AppDelegate+requestReview.swift in Sources */,
+				EEB8EBE32C99BF7400E4A596 /* ChatGPTModel.swift in Sources */,
 				EE06D0272C795525006B67CA /* HostingController.swift in Sources */,
+				EEB8EBEB2C99BFB700E4A596 /* ChatGPTResponse.swift in Sources */,
 				EE06D02D2C7A02B3006B67CA /* SettingsViewModel.swift in Sources */,
 				EE9540172C7CBFF600664DB9 /* PaywallView.swift in Sources */,
 				EE06D01C2C794EFD006B67CA /* SceneDelegate.swift in Sources */,
 				EE95401E2C7CC2A400664DB9 /* Paywall+Coordinator.swift in Sources */,
 				EE953FFB2C7B2E7600664DB9 /* Main+Configuration.swift in Sources */,
+				EEB8EBE72C99BF9400E4A596 /* ChatGPTMessage.swift in Sources */,
 				EE06D0242C795105006B67CA /* Main+Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
