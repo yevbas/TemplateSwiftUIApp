@@ -369,7 +369,7 @@
 				EE141CB92C75F5D100377DA5 /* Frameworks */,
 				EE141CBA2C75F5D100377DA5 /* Resources */,
 				EE141D0C2C7901C600377DA5 /* SwiftGen */,
-				921D75568E8CDFC0A69D1E67 /* [CP] Embed Pods Frameworks */,
+				E19057236852D0732B8B22EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -463,7 +463,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		921D75568E8CDFC0A69D1E67 /* [CP] Embed Pods Frameworks */ = {
+		E19057236852D0732B8B22EB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -694,6 +694,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TemplateSwiftUIApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 7SVA3R34P5;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Resolver\"",
+					"$(SRCROOT)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TemplateSwiftUIApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -726,6 +731,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TemplateSwiftUIApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 7SVA3R34P5;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Resolver\"",
+					"$(SRCROOT)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TemplateSwiftUIApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
