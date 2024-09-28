@@ -9,51 +9,82 @@ import Foundation
 import RevenueCat
 import Resolver
 
-@MainActor
+enum PaywallViewState: Equatable {
+    case idle
+    case loaded(_ products: [StoreProduct], selectedProduct: StoreProduct)
+    case loading
+    case empty
+}
+
 final class PaywallViewModel: ObservableObject {
-    @LazyInjected private var configuration: Paywall
-    @Published private(set) var products: [StoreProduct] = []
-    @Published private(set) var purchaseProcessing = false
+    @Published var state: PaywallViewState = .idle
 
     private weak var coordinator: PaywallCoordinator?
+    private var products: [StoreProduct] = []
 
-    private let purchases = Purchases.shared
+    @LazyInjected private var configuration: Paywall
 
-    private var productId: String {
-        configuration.constants.productId
-    }
+    private(set) lazy var features: [ProductFeature] = [
+        /* .init(title: "No ads", systemImage: "minus"), */
+    ]
 
     init(coordinator: PaywallCoordinator) {
         self.coordinator = coordinator
     }
 
+    @MainActor
     func loadProducts() async {
-//         products = await purchases.products([productId])
-        products = [.init(sk1Product: .init())]
+        state = .loading
+
+        let products = await Purchases.shared.products(configuration.constants.storeProductIds).sorted { $0.price < $1.price }
+
+        if products.isEmpty {
+            state = .empty
+        } else {
+            self.products = products
+
+            state = .loaded(products, selectedProduct: products.first(where: { $0.subscriptionPeriod == nil })!)
+        }
     }
 
     func restore() {
-        purchaseProcessing = true
-        purchases.restorePurchases { [weak self] userInfo, _ in
-            self?.purchaseProcessing = false
+        state = .loading
+
+        Purchases.shared.restorePurchases { [weak self] userInfo, publicError in
+            guard let self else { return }
+
+            state = .loaded(products, selectedProduct: products[0])
 
             if let userInfo, userInfo.userHasFullAccess {
-                self?.coordinator?.dismiss()
+                dismiss()
             }
         }
     }
 
     func purchase() {
-        guard let allAccess = products.first(where: { $0.productIdentifier == productId }) else {
-            return
-        }
-        purchaseProcessing = true
-        purchases.purchase(product: allAccess) { [weak self] transaction, userInfo, _, _ in
-            self?.purchaseProcessing = false
+        guard case .loaded(_, let selectedProduct) = state else { return }
+
+        state = .loading
+
+        Purchases.shared.purchase(product: selectedProduct) { [weak self] transaction, userInfo, _, _ in
+            guard let self else { return }
+
+            state = .loaded(products, selectedProduct: products[0])
 
             if transaction != nil && userInfo != nil {
-                self?.coordinator?.dismiss()
+                dismiss()
             }
         }
     }
+
+    func dismiss() {
+        coordinator?.dismiss()
+    }
+}
+
+import UIKit
+
+struct ProductFeature {
+    let title: String
+    let systemImage: String
 }

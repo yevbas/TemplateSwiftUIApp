@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47745C9198B0C8E2938FAA4F /* Pods_TemplateSwiftUIApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4928A513EB6BAE9156FBC06E /* Pods_TemplateSwiftUIApp.framework */; };
+		EE00A3EB2CA8178400C74D57 /* StoreProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE00A3EA2CA8178400C74D57 /* StoreProductView.swift */; };
 		EE06CFF32C79498D006B67CA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE06CFF22C79498D006B67CA /* Launch Screen.storyboard */; };
 		EE06CFF82C794D5C006B67CA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06CFF72C794D5C006B67CA /* Coordinator.swift */; };
 		EE06D01C2C794EFD006B67CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06D01B2C794EFD006B67CA /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		1EE9E8A874113A963CE537EC /* Pods-TemplateSwiftUIApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateSwiftUIApp.release.xcconfig"; path = "Target Support Files/Pods-TemplateSwiftUIApp/Pods-TemplateSwiftUIApp.release.xcconfig"; sourceTree = "<group>"; };
 		4928A513EB6BAE9156FBC06E /* Pods_TemplateSwiftUIApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateSwiftUIApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE00A3EA2CA8178400C74D57 /* StoreProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreProductView.swift; sourceTree = "<group>"; };
 		EE06CFF22C79498D006B67CA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EE06CFF72C794D5C006B67CA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EE06D01B2C794EFD006B67CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				EE9540162C7CBFF600664DB9 /* PaywallView.swift */,
+				EE00A3EA2CA8178400C74D57 /* StoreProductView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				EE9540042C7CB7DF00664DB9 /* PaywallViewModel.swift in Sources */,
 				EE06D0332C7AA53D006B67CA /* MainViewModel.swift in Sources */,
 				EE9540092C7CB8D900664DB9 /* Paywall+Configuration.swift in Sources */,
+				EE00A3EB2CA8178400C74D57 /* StoreProductView.swift in Sources */,
 				EE95400F2C7CBB6D00664DB9 /* AppDelegate+apiKey.swift in Sources */,
 				EE06D02F2C7A02C2006B67CA /* SettingsViewHostingController.swift in Sources */,
 				EE06CFF82C794D5C006B67CA /* Coordinator.swift in Sources */,

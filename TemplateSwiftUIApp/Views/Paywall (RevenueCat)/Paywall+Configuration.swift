@@ -16,9 +16,15 @@ struct Paywall {
 
 extension Paywall {
     struct Strings {
-        var restorePurchasesButton = "Restore purchases"
+        var restorePurchasesButton = "Restore"
         var privacyPolicyTitle = "Privacy policy"
+        var doneButton = "Done"
+        var availablePlans = "Available plans:"
+        var noProductsTitle = "No products found"
         var termsOfUseTitle = "Terms and Conditions"
+        var cancelAnytimeTitle = "Cancel any time"
+        var continueButton = "Continue"
+        var annuallyTitle = "Annually"
     }
 }
 
@@ -27,6 +33,8 @@ extension Paywall {
         var privacyPolicyURL = "google.com"
         var termsOfUseURL = "google.com"
         #warning("TODO: Add product id if needed")
-        var productId = "-your-product-id-"
+        var storeProductIds = [
+            "-your-product-id-"
+        ]
     }
 }
