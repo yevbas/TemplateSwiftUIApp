@@ -7,7 +7,11 @@
 
 import UIKit
 
-final class PaywallCoordinator: Coordinator {
+protocol PaywallCoordinatorProtocol: Coordinator {
+    func dismiss()
+}
+
+final class PaywallCoordinator: PaywallCoordinatorProtocol {
     weak var navigationController: UINavigationController?
 
     init(navigationController: UINavigationController? = nil) {

@@ -13,7 +13,7 @@ struct PaywallView: View {
     @Injected private var configuration: Paywall
     @StateObject private var viewModel: PaywallViewModel
 
-    init(coordinator: PaywallCoordinator) {
+    init(coordinator: PaywallCoordinatorProtocol) {
         self._viewModel = .init(wrappedValue: .init(coordinator: coordinator))
     }
 

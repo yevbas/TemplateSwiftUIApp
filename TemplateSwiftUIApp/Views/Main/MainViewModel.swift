@@ -8,9 +8,9 @@
 import Foundation
 
 final class MainViewModel: ObservableObject {
-    private weak var coordinator: MainCoordinator?
+    private weak var coordinator: MainCoordinatorProtocol?
 
-    init(coordinator: MainCoordinator?) {
+    init(coordinator: MainCoordinatorProtocol?) {
         self.coordinator = coordinator
     }
 

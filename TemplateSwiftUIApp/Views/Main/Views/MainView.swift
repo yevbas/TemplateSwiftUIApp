@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     @StateObject private var viewModel: MainViewModel
 
-    init(coordinator: MainCoordinator) {
+    init(coordinator: MainCoordinatorProtocol) {
         self._viewModel = .init(wrappedValue: .init(coordinator: coordinator))
     }
 

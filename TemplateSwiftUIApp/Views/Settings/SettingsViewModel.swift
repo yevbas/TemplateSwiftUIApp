@@ -11,9 +11,9 @@ import Resolver
 final class SettingsViewModel: ObservableObject {
     @LazyInjected private var configuration: Settings
 
-    private weak var coordinator: SettingsCoordinator?
+    private weak var coordinator: SettingsCoordinatorProtocol?
 
-    init(coordinator: SettingsCoordinator?) {
+    init(coordinator: SettingsCoordinatorProtocol?) {
         self.coordinator = coordinator
     }
 

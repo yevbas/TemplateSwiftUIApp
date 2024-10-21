@@ -7,7 +7,12 @@
 
 import UIKit
 
-final class MainCoordinator: Coordinator {
+protocol MainCoordinatorProtocol: Coordinator {
+    func navigateToSettings()
+    func presentPaywall()
+}
+
+final class MainCoordinator: MainCoordinatorProtocol {
     weak var navigationController: UINavigationController?
 
     private weak var window: UIWindow?

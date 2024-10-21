@@ -11,9 +11,9 @@ import Resolver
 
 final class MainViewHostingController: HostingController<MainView> {
     @LazyInjected private var configuration: Main
-    private weak var coordinator: MainCoordinator?
+    private weak var coordinator: MainCoordinatorProtocol?
 
-    init(coordinator: MainCoordinator) {
+    init(coordinator: MainCoordinatorProtocol) {
         self.coordinator = coordinator
         super.init(rootView: MainView(coordinator: coordinator))
     }

@@ -25,7 +25,7 @@ extension AppDelegate {
         if let purchasesKey = AppDelegate.getApiKey(for: .purchases) {
             Purchases.logLevel = .debug
             Purchases.configure(withAPIKey: purchasesKey)
-            Resolver.register { UserInfoAsyncMonitor(customerInfoStreaming: Purchases.shared.customerInfoStream) }.scope(.application)
+            Resolver.register { PurchasesUseInformationMonitor(customerInfoStreaming: Purchases.shared.customerInfoStream) }.scope(.application)
         }
     }
 }

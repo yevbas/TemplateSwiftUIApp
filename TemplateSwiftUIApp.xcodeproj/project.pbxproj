@@ -35,7 +35,7 @@
 		EE9540042C7CB7DF00664DB9 /* PaywallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9540032C7CB7DF00664DB9 /* PaywallViewModel.swift */; };
 		EE9540072C7CB86200664DB9 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = EE9540062C7CB86200664DB9 /* RevenueCat */; };
 		EE9540092C7CB8D900664DB9 /* Paywall+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9540082C7CB8D900664DB9 /* Paywall+Configuration.swift */; };
-		EE95400B2C7CB9EA00664DB9 /* UserInfoAsyncMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE95400A2C7CB9EA00664DB9 /* UserInfoAsyncMonitor.swift */; };
+		EE95400B2C7CB9EA00664DB9 /* PurchasesUseInformationMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE95400A2C7CB9EA00664DB9 /* PurchasesUseInformationMonitor.swift */; };
 		EE95400F2C7CBB6D00664DB9 /* AppDelegate+apiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE95400E2C7CBB6D00664DB9 /* AppDelegate+apiKey.swift */; };
 		EE9540112C7CBEAC00664DB9 /* AppDelegate+setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9540102C7CBEAC00664DB9 /* AppDelegate+setup.swift */; };
 		EE9540172C7CBFF600664DB9 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9540162C7CBFF600664DB9 /* PaywallView.swift */; };
@@ -82,7 +82,7 @@
 		EE9540002C7B530200664DB9 /* UImage+swiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImage+swiftUI.swift"; sourceTree = "<group>"; };
 		EE9540032C7CB7DF00664DB9 /* PaywallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallViewModel.swift; sourceTree = "<group>"; };
 		EE9540082C7CB8D900664DB9 /* Paywall+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Paywall+Configuration.swift"; sourceTree = "<group>"; };
-		EE95400A2C7CB9EA00664DB9 /* UserInfoAsyncMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoAsyncMonitor.swift; sourceTree = "<group>"; };
+		EE95400A2C7CB9EA00664DB9 /* PurchasesUseInformationMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesUseInformationMonitor.swift; sourceTree = "<group>"; };
 		EE95400E2C7CBB6D00664DB9 /* AppDelegate+apiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+apiKey.swift"; sourceTree = "<group>"; };
 		EE9540102C7CBEAC00664DB9 /* AppDelegate+setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+setup.swift"; sourceTree = "<group>"; };
 		EE9540162C7CBFF600664DB9 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
@@ -117,11 +117,11 @@
 		EE06CFF42C794D1A006B67CA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				EE9540152C7CBFEA00664DB9 /* Views */,
 				EE06D0322C7AA53D006B67CA /* MainViewModel.swift */,
 				EE06D0212C795026006B67CA /* MainViewHostingController.swift */,
 				EE06D0232C795105006B67CA /* Main+Coordinator.swift */,
 				EE953FFA2C7B2E7600664DB9 /* Main+Configuration.swift */,
+				EE9540152C7CBFEA00664DB9 /* Views */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -147,11 +147,11 @@
 		EE06D0292C7A0254006B67CA /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				EE9540142C7CBFE500664DB9 /* Views */,
 				EE06D02C2C7A02B3006B67CA /* SettingsViewModel.swift */,
 				EE06D02E2C7A02C2006B67CA /* SettingsViewHostingController.swift */,
 				EE06D0302C7A9EF2006B67CA /* Settings+Coordinator.swift */,
 				EE953FF82C7B2E4E00664DB9 /* Settings+Configuration.swift */,
+				EE9540142C7CBFE500664DB9 /* Views */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -258,12 +258,12 @@
 		EE9540022C7CB78E00664DB9 /* Paywall (RevenueCat) */ = {
 			isa = PBXGroup;
 			children = (
-				EE9540182C7CC00100664DB9 /* Views */,
 				EE9540032C7CB7DF00664DB9 /* PaywallViewModel.swift */,
 				EE95401B2C7CC11A00664DB9 /* PaywallHostingController.swift */,
 				EE95401D2C7CC2A400664DB9 /* Paywall+Coordinator.swift */,
 				EE9540082C7CB8D900664DB9 /* Paywall+Configuration.swift */,
-				EE95400A2C7CB9EA00664DB9 /* UserInfoAsyncMonitor.swift */,
+				EE95400A2C7CB9EA00664DB9 /* PurchasesUseInformationMonitor.swift */,
+				EE9540182C7CC00100664DB9 /* Views */,
 			);
 			path = "Paywall (RevenueCat)";
 			sourceTree = "<group>";
@@ -482,7 +482,7 @@
 				EE141D092C78FF1E00377DA5 /* AppDelegate.swift in Sources */,
 				EE141D062C78FB1E00377DA5 /* GeneratedStrings.swift in Sources */,
 				EE9540112C7CBEAC00664DB9 /* AppDelegate+setup.swift in Sources */,
-				EE95400B2C7CB9EA00664DB9 /* UserInfoAsyncMonitor.swift in Sources */,
+				EE95400B2C7CB9EA00664DB9 /* PurchasesUseInformationMonitor.swift in Sources */,
 				EE06D02B2C7A02AB006B67CA /* SettingsView.swift in Sources */,
 				EE9540042C7CB7DF00664DB9 /* PaywallViewModel.swift in Sources */,
 				EE06D0332C7AA53D006B67CA /* MainViewModel.swift in Sources */,

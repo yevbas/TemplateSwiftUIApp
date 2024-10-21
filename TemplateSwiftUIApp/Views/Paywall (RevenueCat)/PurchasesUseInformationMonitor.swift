@@ -1,5 +1,5 @@
 //
-//  UserInfoAsyncMonitor.swift
+//  PurchasesUseInformationMonitor.swift
 //  TemplateSwiftUIApp
 //
 //  Created by Jackson  on 26/08/2024.
@@ -10,7 +10,7 @@ import RevenueCat
 
 /// Delegates asynchronous customer information flow from RevenueCat.
 @MainActor
-final class UserInfoAsyncMonitor: ObservableObject {
+final class PurchasesUseInformationMonitor: ObservableObject {
     @Published var customerInfo: CustomerInfo?
 
     var userHasFullAccess: Bool {

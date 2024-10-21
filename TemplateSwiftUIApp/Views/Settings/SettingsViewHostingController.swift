@@ -11,7 +11,7 @@ import Resolver
 final class SettingsViewHostingController: HostingController<SettingsView> {
     @LazyInjected private var configuration: Settings
 
-    init(coordinator: SettingsCoordinator) {
+    init(coordinator: SettingsCoordinatorProtocol) {
         super.init(rootView: SettingsView(coordinator: coordinator))
     }
 

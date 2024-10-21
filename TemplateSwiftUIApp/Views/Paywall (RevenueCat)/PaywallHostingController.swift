@@ -8,7 +8,7 @@
 import Foundation
 
 final class PaywallHostingController: HostingController<PaywallView> {
-    init(coordinator: PaywallCoordinator) {
+    init(coordinator: PaywallCoordinatorProtocol) {
         super.init(rootView: PaywallView(coordinator: coordinator))
     }
 }

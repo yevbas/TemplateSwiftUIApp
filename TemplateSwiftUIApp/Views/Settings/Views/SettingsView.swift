@@ -12,7 +12,7 @@ struct SettingsView: View {
     @Injected private var configuration: Settings
     @StateObject private var viewModel: SettingsViewModel
 
-    init(coordinator: SettingsCoordinator) {
+    init(coordinator: SettingsCoordinatorProtocol) {
         self._viewModel = .init(wrappedValue: .init(coordinator: coordinator))
     }
 

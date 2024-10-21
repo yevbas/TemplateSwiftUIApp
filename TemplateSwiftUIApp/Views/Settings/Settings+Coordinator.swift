@@ -8,7 +8,11 @@
 import UIKit
 import SwiftUI
 
-final class SettingsCoordinator: Coordinator {
+protocol SettingsCoordinatorProtocol: Coordinator {
+    func presentMailCompose(recipients: [String])
+}
+
+final class SettingsCoordinator: SettingsCoordinatorProtocol {
     weak var navigationController: UINavigationController?
 
     init(navigationController: UINavigationController?) {

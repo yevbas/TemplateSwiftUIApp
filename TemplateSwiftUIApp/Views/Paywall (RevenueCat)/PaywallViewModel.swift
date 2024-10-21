@@ -19,7 +19,7 @@ enum PaywallViewState: Equatable {
 final class PaywallViewModel: ObservableObject {
     @Published var state: PaywallViewState = .idle
 
-    private weak var coordinator: PaywallCoordinator?
+    private weak var coordinator: PaywallCoordinatorProtocol?
     private var products: [StoreProduct] = []
 
     @LazyInjected private var configuration: Paywall
@@ -28,7 +28,7 @@ final class PaywallViewModel: ObservableObject {
         /* .init(title: "No ads", systemImage: "minus"), */
     ]
 
-    init(coordinator: PaywallCoordinator) {
+    init(coordinator: PaywallCoordinatorProtocol) {
         self.coordinator = coordinator
     }
 
